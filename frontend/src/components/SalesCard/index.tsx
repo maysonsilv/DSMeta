@@ -23,7 +23,7 @@ function SalesCard() {
         const dmax = maxDate.toISOString().slice(0,10);
         
         
-        console.log(dmin);
+        
 
 
         axios.get(`${BASE_URL}/sales?minDate=${dmin}&maxDate=${dmax}`)
@@ -86,7 +86,7 @@ function SalesCard() {
                                 <td>
 
                                     <div className="dmseta-red-btn-container">
-                                        <NotificationButton />
+                                        <NotificationButton  saleId={sale.id} />
                                     </div>
 
 
